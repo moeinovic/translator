@@ -26,6 +26,3 @@ async def main(text: str, lang: str):
 async def root(text: str, lang: str):
     myres = await main(text, lang)
     return {"ok":True, "data" : myres}
-
-if __name__ == '__main__':
-    run(app, port=80, host='127.0.0.1')
